@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calorie Tracker App</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <h1>This is a calorie counter</h1>
+        <div class="row">
+            
+            <div class="counting-section">
+                <h2>Please input the food you ate and the calories</h2>
+                    <div class="input-food" id="food">
+                        <h4>Food</h4>
+                        <input class= "food-input" placeholder="Hot Dog" type="text">
+                    </div>
+                    <div class="input-calorie">
+                        <h4>Calorie</h4>
+                        <input class="calorie-input" placeholder="400" type="number">
+                    </div>
+                    <div class="add"><button class="add-button" id="add-button" onclick="updateFood()">Add</button></div>
+            </div>
+
+            <div class="showing-section">
+                <div class="showing-bar" id="showing-bar"> 
+                    <div class="delete">
+                        <button class="x">x</button>
+                    </div>
+                    <div class="food-name" id="food-name"></div>
+                    <div class="calorie-number" id="calorie-number">0</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="total-calories">
+            <p>Your total calories are: </p>
+            <p class="total"></p>
+            <!-- <img class="cookie" src="/no chocalte chocalte chip cookie.jpeg"> 
+            <p>Chocolate chip cookies without chocolate chips for Arinka</p> -->
+        </div>
+
+        <script src="App.js"></script>
+    </body>
+</html>
